@@ -5,9 +5,25 @@ import java.util.List;
 
 public class Colecao extends BaseBiblioteca {
 
-    public String editora;
+    private String editora;
 
-    public List<Livro> livros;
+    private List<Livro> livros;
+
+    public String getEditora() {
+        return editora;
+    }
+
+    public void setEditora(String editora) {
+        this.editora = editora;
+    }
+
+    public List<Livro> getLivros() {
+        return livros;
+    }
+
+    public void setLivros(List<Livro> livros) {
+        this.livros = livros;
+    }
 
     public Colecao() {
     }
@@ -17,14 +33,10 @@ public class Colecao extends BaseBiblioteca {
         this.editora = editora;
     }
 
-    public Colecao(String editora) {
-        this.editora = editora;
-    }
-
     @Override
     public String toString() {
 
-        return super.toString() + "Colecao [editora=" + editora + ", livros=" + livros + "]\n";
+        return super.toString() + "Colecao [editora=" + editora + "\n";
     }
 
 }

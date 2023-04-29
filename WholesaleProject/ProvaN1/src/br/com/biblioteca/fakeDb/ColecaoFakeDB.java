@@ -14,6 +14,5 @@ public class ColecaoFakeDB extends BaseFakeDb<Colecao> {
         this.tabela.add(new Colecao(3, "Coleção 3", LocalDate.now(), "Editora 3"));
         this.tabela.add(new Colecao(4, "Coleção 4", LocalDate.now(), "Editora 4"));
         this.tabela.add(new Colecao(5, "Coleção 5", LocalDate.now(), "Editora 5"));
-
     }
 }
